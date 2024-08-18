@@ -1,45 +1,51 @@
 body
 {
+    width: auto; height: auto;
     font-family: "Sono", sans-serif;
-    font-size: large;
+    font-size: 180%;
     background-image: url(../Media/Background.jpg);
     background-size: cover;
 }
 
 .MainShape
 {
-    opacity: 85%;
+    
     border-radius: 25px;
     width:90% ; height:95% ;
-    background-color:white ;
-    margin-top:5% ; margin-left:5% ; margin-right:10% ; ;
+    background-color:rgba(255, 255, 255, 0.70) ;
+    margin-left: 5%; margin-right: 5%; margin-top: 20%;
     text-align: center;
+    
 }
 
 .ProfilePhoto
 {
-    border: 10px;
+    z-index: 5;
+    position: absolute; transform: translate(-50%,-50%);
+    position: absolute; left: 50%; top: var(--MainShape-top);
     border-radius: 50%;
     display: block;
-    width:180px; height:180px;
-    margin-left: auto; margin-right: auto; margin-bottom: 0%; 
+    width:20%;min-width: 250px; aspect-ratio:1/1;
 }
 
 .MainText
 {
-    padding: 25px;
+    padding: 5%; padding-top: 10%;
 }
 
 
-.MainText h1 {font-size: xx-large; font-weight: bolder;}
+.MainText h1 {font-size: 350%; font-weight: bolder;}
 
-.Title {margin-bottom: 5%;}
+.Title {margin-bottom: 2%;}
 
-.Tabs span 
+
+
+.TabButtons button 
 {
-    width: 20%; height: 2cm; background-color: grey; border-radius: 20%;
-    font-size: x-large; font-weight: bold; text-align: center;
-    padding-right: 7%; padding-left: 7%; margin-bottom:10%;
+    width: 24%; height: 150px; background-color: rgba(120, 202, 188, 0.10); 
+    border:0; border-radius: 5%;
+    font-family: "Sono";font-size: 180%; font-weight: bold; text-align: center;
+    padding-right: 7%; padding-left: 7%; margin-bottom:3%; vertical-align:middle;
 }
 
 

@@ -9,21 +9,23 @@
 
     <body>
         <img class="ProfilePhoto" src=".\Media\ProfilePhoto.jpg"/>
-        <div class="MainShape">
+        <div class="MainShape" style="anchor-name:Profile-Photo;">
             
             
             <div class="MainText">
-                <section class="Title"><h1>Omar Al-jumaili</h1>
-            <p>Pharmacy Bsc. with a passion for Software Engineering</p></section>
 
-            <span class="Tabs">
-                <a><span>General</span></a>
-                <a><span>Education</span></a>
-                <a><span>Live Server</span></a>
-                <a><span>Socials</span></a>
-            </span>
+                <section class="Title">
+                    <h1>Omar Al-jumaili</h1>
+                    <p style="font-size: 150%;">Pharmacy Bsc. with a passion for Software Engineering</p>
+                </section>
 
-            <span class="General">
+            <div class="TabButtons">
+                <a><button style="background-color: rgba(90, 150, 140, 0.3);">About Me</button></a>
+                <a><button>Live Server</button></a>
+                <a><button>Socials</button></a>
+            </div>
+
+            <span class="Tabs" id="AboutMe">
                 <p>
                     Hi, I'm Omar Akram al-Jumaili from Iraq. I hold a bachelor's degree
                     in Pharmacy from the University of Jordan and am currently pursuing a
@@ -31,31 +33,27 @@
                     to excellence, I'm excited to blend my diverse background in healthcare
                     with the creative and technical world of web development.
                 </p>
-            </span>
 
-            <span class="Education">
                 <p>
                     With a Bachelorette in Pharmacy from the University of Jordan, I’ve developed
                     strong skills in research, analysis, and problem-solving. My experience in the pharmaceutical
                     field taught me the importance of precision and detail, which I now bring into my work as I
                     transition into web development.
                 </p>
-
+    
                 <p>
                     I’m currently focused on building my technical skills, eager to create user-friendly digital
                     solutions. My goal is to combine what I’ve learned in healthcare with new web development
                     expertise to make meaningful contributions in this field.
                 </p>
-
-                <img src="">
             </span>
 
-            <span class="LiveServer">
+            <span class="Tabs" id="LiveServer" style="display: none;">
                 <p>Here is a live preview of my server's dashboard, Check it out!</p>
                 <iframe src="http:\\192.168.0.170:3000" height="500px"></iframe>
             </span>
 
-            <span class="Socials">
+            <span class="Tabs" id="Socials" style="display: none;">
                 <p>
                     feel free to check me out on any of my social links:
                 </p>
