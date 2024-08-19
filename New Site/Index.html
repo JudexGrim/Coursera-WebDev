@@ -8,19 +8,27 @@
     </head>
 
     <body>
-        <img class="ProfilePhoto" src=".\Media\ProfilePhoto.jpg"/>
-        <div class="MainShape" style="anchor-name:Profile-Photo;">
-            
-            
+        
+        <label class="Switch">
+            <input type="checkbox">
+            <span class="slider">
+                <img src="./Media/Day_Icon.png" class="Day">
+                <img src="./Media/Night_Icon.png" class="Night">
+            </span>
+        </label>
+
+        <div class="MainShape">
+                       
+            <img class="ProfilePhoto" src=".\Media\ProfilePhoto.jpg"/>
             <div class="MainText">
 
                 <section class="Title">
                     <h1>Omar Al-jumaili</h1>
-                    <p style="font-size: 150%;">Pharmacy Bsc. with a passion for Software Engineering</p>
+                    <p style="font-size: 2vw;">Pharmacy Bsc. with a passion for Software Engineering</p>
                 </section>
 
-            <div class="TabButtons">
-                <a><button style="background-color: rgba(90, 150, 140, 0.3);">About Me</button></a>
+            <div class="Tabs">
+                <a><button autofocus="true" >About Me</button></a>
                 <a><button>Live Server</button></a>
                 <a><button>Socials</button></a>
             </div>
@@ -50,7 +58,7 @@
 
             <span class="Tabs" id="LiveServer" style="display: none;">
                 <p>Here is a live preview of my server's dashboard, Check it out!</p>
-                <iframe src="http:\\192.168.0.170:3000" height="500px"></iframe>
+                <iframe src="http:\\192.168.0.170:3000" height="500px" width="50%"></iframe>
             </span>
 
             <span class="Tabs" id="Socials" style="display: none;">
