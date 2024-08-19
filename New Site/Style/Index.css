@@ -2,7 +2,7 @@ body
 {
     width: auto; height: auto;
     font-family: "Sono", sans-serif;
-    font-size: xx-large;
+    font-size: x-large;
     background-image: url(../Media/Background.jpg);
     background-size: cover;
 }
