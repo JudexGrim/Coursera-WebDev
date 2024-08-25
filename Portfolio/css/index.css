@@ -1,0 +1,179 @@
+body
+{
+    font-size:x-large;
+    font-family:"Mate", "Sedan", serif;
+    height: 99%; width: 99%;
+    background-color: rgb(27, 29, 26);
+    background-image: url(../images/backgroundOverlay.png);
+    background-blend-mode: multiply;
+    background-repeat: repeat, repeat;
+    background-size: 270px;
+    color: beige;
+}
+
+.header
+{
+    width: 95%; height: 120px; min-width: 1124px; 
+    display: flex; position: sticky; top: 0;
+    justify-content: center; align-items: center;
+    margin-left: auto; margin-right: auto;
+    border-radius: 0 0 25px 25px;
+    background-color: rgb(36, 39, 32);
+    z-index: 10;
+    box-shadow: 2px 2px 5px rgba(19, 20, 16, 0.581);
+
+    div 
+    {
+        position: absolute;
+        display: inline;
+        margin-top: 10px;
+    }
+    .logo
+    {
+        left: 5%;
+        img
+        {
+            width: 80px; 
+            vertical-align: middle;
+        }
+    }
+    .navbar
+    {
+        position: relative;
+        width: 30%; height: 55px;
+        min-width: 550px; max-width: 600px;
+        align-items: center; text-align: center;
+        background-color: rgb(86, 96, 69);
+        border-radius: 25px;
+        button 
+        {
+            padding: 10px;
+            font-family: "Mate";
+            cursor:pointer;
+            background-color: rgba(0,0,0,0);
+            margin-top: 3px;
+            margin-right: 1%; margin-left: 1%;
+            width: fit-content;
+            color: beige;
+            font-size: x-large;
+            border: 0; border-radius: 20px;
+            transition: 0.3s;
+        }
+        button:hover {background-color: rgb(69, 78, 53);}
+        
+    }
+    .searchbar
+    {
+        width: 18%; max-width: 250px;
+        right: 5%;
+        background-color: rgb(86, 96, 69);        
+        border-radius: 25px; 
+        input 
+        {
+            font-family: "Mate";
+            
+            margin: 0px 0 4px 5%;
+            width: 90%; height: 25px;
+            background-color: rgba(86, 96, 69, 0);
+            border: 0;
+            font-size: medium;
+        }
+        input:focus 
+        {
+            outline: none;
+            color: beige;
+        }
+    }
+    
+}
+
+.maintext
+{
+    box-sizing: border-box;
+    position: relative; display: flex;
+    width: 95%; height: 750px; min-width: 1345px;
+    margin: 5px auto 5px auto;
+    padding-top: 40px;
+    justify-content: center; align-items: center;
+    .tagline 
+    {
+        position: absolute; display: inline;
+        left: 5%; top:300px;
+        font-size: xx-large; font-family: "Mate", serif;
+    }
+    
+    #name {display: inline;}
+    
+    .profilephoto {position: absolute; right: 5%; height: 400px;}
+
+    h1 {display:block ; font-size: 2em; font-family: "Sedan"; color: #E5BE1F;}
+
+    .headline 
+    {
+        margin-top: 0;
+        position: absolute; display: block;
+        transform: translateX(-50%);
+        left: 50%; top: 5px;
+    }
+}
+
+
+.aboutme
+{
+    padding-left: 3%; padding-right: 3%;
+    text-align: center;
+    div 
+    {
+        position: relative;
+        bottom: 50px;
+        display: inline;
+        width: 30%; height: 250px;
+        margin-right: 10%;
+    }
+
+}
+
+.skills
+{
+    display: block;
+    text-align: center;
+
+    .skillpanes
+    {
+        display: flex; position: relative;
+        justify-content: center; align-items: center;
+        width: 95%; height: 260px; 
+        margin: 80px auto 0 auto;
+        
+        div 
+        {
+            display: inline; position: relative;
+            width: 290px; height: 260px;
+            margin: 5%;
+            background-color: rgb(20, 21, 19);
+            border-radius: 15px;
+            text-align: center;
+
+            img 
+            {
+                width: 150px;
+                margin-top: 20px;
+            }
+
+            p 
+            {
+                position: absolute;
+                margin: 0;
+                bottom: 15px;
+                right: 50%;
+                transform: translateX(50%);
+                right: 50%;
+            }
+        }
+    }
+}
+
+.portfolio
+{
+    text-align: center;
+}
